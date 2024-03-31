@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+body {
+  background-color: #50727b;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navbar */
+nav {
+  background-color: #35374b;
+  padding: 15px 0;
+  margin-bottom: 90px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  flex: 1;
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Madimi One", sans-serif;
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 60px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  padding: 60px;
+}
+
+.container h1 {
+  font-family: "Bowlby One SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.konten1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.konten1 img {
+  margin-right: 20px;
+  max-width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.konten1 p {
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.menu-card {
+  margin: 0px;
+}
+
+.menu-card img {
+  border-radius: 10px 10px 10px 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: rgba(244, 12, 146, 0.8);
+  color: #ffff;
+  font-family: "Madimi One", sans-serif;
+  font-size: large;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #35374b;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+}
